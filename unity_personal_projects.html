@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Unity Development | Game | Shader Graphs</title>
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../cdn.jsdelivr.net/npm/animate.css%403.5.2/animate.min.css">
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+	<script src="myscript.js"></script>
+</head>
+
+<body id="herecruit">
+	<progress value="0" id="progressBar">
+		<div class="progress-container">
+			<span class="progress-bar"></span>
+		</div>
+	</progress>
+	<header class="main-menu animated fadeInDown">
+		<div class="content">
+
+			<div class="menu-float-left">
+				<div class="menu-horizontal">
+					<p><a href="index.html">Projects</a></p>
+					<p><a href="info.html">About</a></p>
+				</div>
+			</div>
+			<div class="menu-float-right">
+				<div class="menu-horizontal">
+					<p><a href="files/Meghaksh_Brahmbhatt_CV.pdf" target="_blank">Resume</a></p>
+					<p><a href="https://www.linkedin.com/in/meghakshb/" target="_blank">Linkedin</a></p>
+					<p><a href="mailto:meghaksh4footprints@gmail.com" target="_blank">Email</a></p>
+				</div>
+			</div>
+
+		</div>
+
+	</header>
+
+	<div class="post">
+		<div class="content">
+			<h1 class="text-width">Zombie Shooter Game</h1>
+			<div class="post-image">
+				<center><a href="https://meghakshb.itch.io/zombie-shooter" target="_blank"><img
+							src="images/ZombieShooter/zombiecanvas.PNG"></a></center>
+			</div>
+			<div>
+				<div>
+					<div class="summary-block">
+						<p class="summary-head">Background </p>
+						<p class="summary-block-content">Before developing this game, my Unity3D development work was
+							limited to AR / VR / MR development for Infosys. I had no experience in game development. I
+							decided to take the Complete Unity Developer course on Udemy. I took this Zombie Shooter
+							game as weekend project to learn advanced unity concepts.</p>
+					</div>
+					<div class="summary-block">
+						<p class="summary-head">Unity Features</p>
+						<p class="summary-block-content">I learned advanced concepts of game development like Game
+							Design, Prototyping Sandbox, Navmesh Agent & AI, Raycasting, Particle Effects, Animation,
+							Weapon System, and Probuilder for making Levels. </p>
+					</div>
+					<div class="summary-block">
+						<p class="summary-head">Duration </p>
+						<p class="summary-block-content">4 Weekends </p>
+					</div>
+					<div class="summary-block">
+						<p class="summary-head">Team Detail </p>
+						<p class="summary-block-content">Individual </p>
+					</div>
+					<div class="summary-block">
+						<p class="summary-head">Test Platforms</p>
+						<p class="summary-block-content"> Unity WebGL </p>
+					</div>
+					<div class="summary-block">
+						<p class="summary-head">Difficulties Faced</p>
+						<p class="summary-block-content">I faced difficulties while baking the lights. I wanted to keep
+							the environment dark and illuminate it with lights but lights were not rendering properly.
+							After the deployment of this game, I faced difficulties loading the fonts used in
+							TextMeshPro.</p>
+					</div>
+					<div class="summary-block">
+						<p class="summary-head">Future Enhancement</p>
+						<p class="summary-block-content">
+							Till now the zombie shooter has the core mechanic ready and in the future, I am planning to
+							add multiple weapons and pickups, improve the lighting, add Voice(particularly for WebGL
+							platform). Also, I am planning to make it more strategic by adding levels and meaningful
+							game story.
+						</p>
+					</div>
+					<div class="summary-block">
+						<p class="summary-head">References</p>
+						<p class="summary-block-content"><a target="_blank"
+								href="https://www.udemy.com/share/101WeyAEAScltUTH4=/">Udemy : Complete C# Unity
+								Developer 3D</a></p>
+					</div>
+					<div class="summary-block">
+						<p class="summary-head">Live Demo</p>
+						<p class="summary-block-content"><a target="_blank"
+								href="https://meghakshb.itch.io/zombie-shooter">Click Here to Play</a></p>
+					</div>
+				</div>
+				<div class="text-width">
+					<h2><span class="head-style">Development Process</span></h2>
+				</div>
+				<div class="text-width">
+					<h3>
+						Game Design
+					</h3>
+					<p>As part of game design, I finalized the core game mechanic for the zombie shooter that is the
+						first-person shooter with some enemies to kill. To make it more fun, I decided to make the
+						enemies AI-enabled.</p>
+				</div>
+				<div class="text-width">
+					<h3>
+						Environment Sandbox
+					</h3>
+					<p>To build the core mechanic of the game, I used a prototype environment using Unity Standard
+						Assets. I used inbuilt Floor, House, Pillars, Step, and Ramp prototypes and then baked it to
+						make it static for the enemies with NavMesh Agent to walk around.</p>
+				</div>
+				<div class="post-image">
+					<img src="images/ZombieShooter/sandboxenv.PNG">
+				</div>
+				<div class="text-width">
+					<h3>
+						Adding Player and Enemy
+					</h3>
+					<p>
+						I used the FPS player controller from the Unity Standard Assets Package. Also, I attached a
+						Carbine 3D object to it with a particle system to feedback the player about shoot.
+						I added a capsule with a Capsule Collider, NavMeshAgent, and EnemyAI script as a placeholder for
+						the real zombie enemy.
+					</p>
+				</div>
+				<div class="post-image">
+					<center>
+						<img src="images/ZombieShooter/player_enemy.PNG">
+					</center>
+				</div>
+				<div class="text-width">
+					<h3>
+						How Enemy AI works?
+					</h3>
+					<p>
+						The enemy will be provoked and chase the target(player) whenever the player is within the chase
+						range of enemy.
+						Moreover, if the player shoots the enemy, it will get provoked. After getting provoked, it will
+						turn around the player are start chasing.
+						The logic for this functionality is written as part of the EnemyAI script where I am setting up
+						isProvoked flag in above scenarios.
+						Also, I am using Quaternion and Slerp for the smooth rotation and chase towards the player.
+					</p>
+					<pre>
+<code>
+/* Script supporting AI functionality of the enemy. */
+
+public class EnemyAI : MonoBehaviour
+{
+	[SerializeField] Transform target;
+	[SerializeField] float chaseRange;
+	[SerializeField] float turnSpeed = 5f;
+	NavMeshAgent navMeshAgent;
+	float distanceToTarget = Mathf.Infinity;
+	bool isProvoked = false;
+	void Start()
+	{
+		//initialize the navMeshAgent
+		navMeshAgent = GetComponent<NavMeshAgent>();
+	}
+	void Update()
+	{
+		//measuring the distance between enemy and player
+		distanceToTarget = Vector3.Distance(target.position, transform.position);
+		if (isProvoked)
+		{
+			EngageWithTarget();
+		}
+		else if (distanceToTarget <= chaseRange)
+		{
+			// if within the chaseRange, provoke the enemy.
+			isProvoked = true;
+		}
+		
+	}
+	//if we shoot the enemy from wherever, it will get provoked 
+	public void OnDamageTaken()
+	{
+		isProvoked = true;
+	}
+	private void EngageWithTarget()
+	{
+		//rotate the enemy towards the player
+		EnemyFaceToPlayer();
+		//start chasing until player is in stopping distance range
+		if (distanceToTarget >= navMeshAgent.stoppingDistance) {
+			ChaseTarget();
+		}
+		//if enemy is at lesser distance than stopping distance, start attacking the player.
+		if(distanceToTarget <= navMeshAgent.stoppingDistance) {
+			AttackTarget();
+		}
+	}
+	private void ChaseTarget()
+	{
+		navMeshAgent.SetDestination(target.position);
+	}
+	private void AttackTarget()
+	{
+		Debug.Log(name + " has seeked and is destroying " + target.name);
+	}
+	//this function will rotate the enemy towards the player.
+	private void EnemyFaceToPlayer()
+	{ 
+		//get the direction of the player from enemy
+		Vector3 direction = (target.position - transform.position).normalized;
+		// rotate smoothly in the direction
+		Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+		transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);	
+	}
+}
+</code>
+</pre>
+				</div>
+				<div class="text-width">
+					<h3>
+						Raycasting and Destroying a Player
+					</h3>
+					<p>The Player has given a script which handles raycasting and destruction of enemy logic.
+						On the press of the "Fire1" button, it shoots at the object in front of the raycaster.
+						Simultaneously, it will have the visual impact of the shooting as a flash.</p>
+					<p>
+						Also, enemy has a script which will keep on checking hitPoints on enemy and once it is exceeded,
+						enemy will die.
+					</p>
+					<pre>
+	<code>
+/*The script given to player which will handle the raycast logic.*/
+public class Weapon : MonoBehaviour
+{
+    [SerializeField] Camera FPSCamera;
+    [SerializeField] float range = 100f;
+    [SerializeField] float damageValue = 30f;
+    [SerializeField] GameObject hitEffect;
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Shoot();
+        }  
+    }
+    private void Shoot()
+    {
+        ProcessRaycast();
+    }
+    private void ProcessRaycast()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(FPSCamera.transform.position, FPSCamera.transform.forward, out hit, range))
+        {
+			// checking which object is hit by the raycaster and creating hit impact
+            Debug.Log("I hit this thing : " + hit.transform.name);
+            CreateHitImpact(hit);
+        }
+        else
+        {
+            return;
+        }
+    }
+	//creating visual impact of the shoot.
+    private void CreateHitImpact(RaycastHit hit)
+    {
+        GameObject impact = Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
+        Destroy(impact, 0.1f);
+    }
+}
+</code>
+</pre>
+				</div>
+				<div class="text-width">
+					<h3>
+						Adding Zombies with Animations
+					</h3>
+					<p>I replaced the placeholder capsule enemy object with the zombie avatar.
+						Also attached the animator for the walk, attack and die animation at certain events in the game.
+					</p>
+
+				</div>
+				<div class="post-video">
+					<video width="100%" autoplay loop>
+						<source src="videos/ZombieShooter/z_animation.mp4">
+					</video>
+				</div>
+				<div class="text-width">
+					<h3>
+						Animator with Transition Conditions
+					</h3>
+					<div class="post-image">
+						<center><img src="images/ZombieShooter/animator.PNG"></center>
+					</div>
+					<center>
+						<span class="img-caption">Triggering the animations from script</span>
+						<pre>
+<code>
+//Move state is triggered when enemy starts chasing.
+GetComponent<Animator>().SetTrigger("Move");
+//Attack state is called when target is within stopping distance from the enemy.
+GetComponent<Animator>().SetBool("Attack",true);
+//Die state is called when enemy takes more hitPoints than assigned. 
+GetComponent<Animator>().SetBool("Die",true);
+</code>
+</pre>
+					</center>
+				</div>
+				<div class="text-width">
+					<hr />
+				</div>
+				<div class="text-width">
+					<h3>
+						Adding Terrain and Trees with materials
+					</h3>
+					<p>
+						I replaced the sandbox prototype environment with the forest terrain I created using Unity's
+						inbuilt terrain 3D object.
+						I made some mountains, applied ground materials, and added trees and grass to make it look like
+						a forest environment. </p>
+				</div>
+				<div class="post-image">
+					<img src="images/ZombieShooter/terrain.PNG">
+				</div>
+
+				<div class="text-width">
+					<h3>
+						Adding Levels using ProBuilder
+					</h3>
+					<p>
+						As part of the level design and building rooms using ProBuilder, I used the house map provided
+						in the course I was referring to. I am working on a few more levels for this game using
+						ProBuilder.
+						Also, I am using this great tool to create small props like bullets, shot-gun shells,
+						power-batteries, etc. </p>
+				</div>
+				<div class="post-video">
+					<video width="100%" autoplay loop>
+						<source src="videos/ZombieShooter/Room.mp4">
+					</video>
+				</div>
+				<div class="text-width">
+					<h3>
+						Adding Lights
+					</h3>
+					<p>
+						Lighting in Unity is the most intricate part to understand for me.
+						I wanted to give a dark environment so I removed the sun source and increased the intensity of
+						skybox lighting for the terrain environment. For the room, I created immersive material to guide
+						the player to move around.
+						I am still working on the lighting part of this project as I faced difficulties baking it on the
+						WebGL platform. </p>
+				</div>
+				<div class="text-width">
+					<h3>
+						Adding Start Game and End Game UI
+					</h3>
+					<p>
+						To tell the game story and guide user about game controls before starting the game and after the
+						game is over,
+						I created two UI canvas which are loaded using scripts. As part of the game loop,
+						I gave Play Again functionality when the game is over. I used TextMesh Pro on both the canvas to
+						render custom fonts.</p>
+				</div>
+				<div class="post-image">
+					<center>
+						<img src="images/ZombieShooter/startUI.PNG">
+					</center>
+				</div>
+
+
+
+
+
+
+				<div class="text-width">
+					<h3>
+						Deploying the Game and Feedback from Players
+					</h3>
+					<p>After building this game for the Unity WebGL platform,
+						I decided to deploy it as the GitHub webpage but GitHub didn't allow me to upload the fonts used
+						in TextMeshPro.
+						Later I deployed to itch.io which is a great platform to distribute games for indie game
+						developers.
+						I shared this game with my colleagues and friends. Currently,
+						I am working on the suggestions and feedback I have received from them. </p>
+				</div>
+
+
+
+			</div>
+
+			<div class="text-width">
+				<hr />
+			</div>
+			<div class="text-width">
+				<h3>
+					Personal attachment with this project
+				</h3>
+				<p>This project is a special one because for the first time I used the Game Engine for the full-fledged game development. 
+					The game development course on Udemy and this project made me much more confident using the Unity3D tool 
+					and it opened my vision for the future use cases I want to work on.</p>
+			</div>
+		</div>
+
+	</div>
+	</div>
+
+	<!-- <div class="projects-bottom">
+		<div class="content">
+			<div class="col-3">
+				<a href="cms_design.html" class="button">&larr; Previous <span class="hide-word">Project</span></a>
+			</div>
+			<div class="col-3 left-margin-3-col">
+				<a href="index.html" class="button">All Projects</a>
+			</div>
+			<div class="col-3 left-margin-3-col">
+				<a href="learning_theories_cooking.html" class="button">Next <span class="hide-word"> Project</span>
+					&rarr;</a>
+			</div>
+		</div>
+	</div> -->
+	<div class="footer">
+		<div class="content">
+			<p>
+				<span class="menu-float-right">
+					<a href="files/Meghaksh_Brahmbhatt_CV.pdf" target="_blank"
+						class="link-left-margin social-links-footer">Resume</a>
+					<a href="https://www.linkedin.com/in/meghakshb/" target="_blank"
+						class="link-left-margin social-links-footer">Linkedin</a>
+					<a href="mailto:meghaksh4footprints@gmail.com" target="_blank"
+						class="link-left-margin social-links-footer">Email</a>
+				</span>
+
+			</p>
+		</div>
+	</div>
+
+</body>
+
+</html>
