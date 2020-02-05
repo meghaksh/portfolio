@@ -44,7 +44,7 @@
 			<div class="content">
 				<!-- <div class="text-width"><div class="thin_line"><span class="thick_line"></span></div></div> -->
 				<h1 class="text-width">Augmented Reality Projects</h1>
-				<p class="project-story text-width">Worked as part of the innovation team to create Augmented Reality applications for the telecom domain.</p>
+				<!-- <p class="project-story text-width">Worked as part of the innovation team to create Augmented Reality applications for the telecom domain.</p> -->
 			</div>
 		</div>
 
@@ -70,8 +70,6 @@
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/1VIlBVTEBOM" frameborder="100"
 					 	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</center>
-					
-	
 				</div>
 				
 				<div class="text-width proj-summary">
@@ -114,29 +112,100 @@
 						</div>
 					</div>
 				</div>
+				<div class="text-width">
+					<h2><span class="head-style">Development Process</span></h2>
+				</div>
+				<div class="text-width">
+					<h3>
+						Gathering Requirements
+					</h3>
+					<p>When I was assigned this project, I had no idea about how Augmented Reality works. 
+						I started with the requirement gathering. Below are some of the questions I asked before starting the development.<br>
+						Who is going to be the prospective users of this application?<br>
+						Are there any specific tools required?<br>
+						Is there any delivery deadline?<br>
+						Is there any specific methodology like agile that we have to follow?<br>
+						What are all the platforms we have to look into? (Android, iOS, Windows etc)</p>
+				</div>
+				<div class="text-width">
+					<h3>
+						Proposing Tools
+					</h3>
+					<p>The leads assigned me a task to find available tools for Augmented Reality. 
+						I found ARCore, ARKit, Vuforia, and Wikitude are providing comprehensive software development kits for AR. 
+						As the requirement was to develop for multiple platforms, I proposed two options that can help to create hybrid application across all the platforms. First Wikitude with Cordova as a base platform and second Vuforia with Unity as a base platform. 
+						After evaluating all the pros and cons, we decided to go with Vuforia and Unity.  </p>
+				</div>
+				<div class="text-width">
+					<h3>
+						Using Vuforia
+					</h3>
+					<p>
+						Vuforia provides three main features to create Augmented Reality Experience. 
+						For this particular project, we chose Object Target feature to detect a 3D object in the field of view of the camera. There are three steps to use Vuforia in Unity. 
+						<br>1) scan the object using Object Target below good lighting conditions. 
+						<br>2) Upload the scanned .obj file in Vuforia Target Manager and download the database.
+						<br>3) Import the Vuforia SDK in Unity and use the object target
+					</p>
+				</div>
+				<div class="post-image">
+					<center>
+						<img src="images/ZombieShooter/vuforia_router.jpg">
+					</center>
+				</div>
+				<div class="text-width">
+					<h3>
+						Using Unity
+					</h3>
+					<p>
+						Vuforia has provided a software development kit for Unity. After importing the generated database from Vuforia in Unity, 
+						I created UI and Augmentation at specific locations in multiple Unity scenes to create a meaningful application flow.  
+					</p>
+				</div>
+				<div class="post-image">
+					<center>
+						<img src="images/ZombieShooter/Router.PNG">
+					</center>
+				</div>
+				<div class="text-width">
+					<h3>
+						Building and testing the application
+					</h3>
+					<p>
+						I built this application on Android and iOS platform. 
+						It faced difficulties in detection while testing on mobile devices with lower camera resolution and under lower lighting conditions. 
+					</p>
+				</div>
+				<div class="text-width">
+					<h3>
+						Other Unity - Vuforia Projects:
+					</h3>
+					<p>
+						Vuforia has three features for detection. 
+						Image Target, Object Target, and Model Target. 
+						Below are some of the projects in which I have used the Image Target feature. 
+						The process remains the same as mentioned above except providing images to Vuforia instead of the object file.
+					</p>
+				</div>
+				<div class="post-video">
+					<center>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/tgwlhnqNazw" 
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</center>
+				</div>
+				<div class="post-video">
+					<center>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/YvAZTgEsiYg" 
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</center>
+				</div>
+
+
+
 			</div>
 
 		</div>
 	</div>
-	</div>
-
-	</div>
-
-	</div>
-
-	
-	<!-- <div class="projects-bottom">
-		<div class="content">
-			<div class="col-3">
-			<div class="col-3 left-margin-3-col">
-				<a href="index.html" class="button">All Projects</a>
-			</div>
-			<div class="col-3 left-margin-3-col">
-				<a href="unity_personal_projects.html" class="button">Next <span class="hide-word">Project</span>
-					&rarr;</a>
-			</div>
-		</div>
-	</div> -->
 	<div class="footer">
 		<div class="content">
 			<p>
